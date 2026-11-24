@@ -25,6 +25,16 @@ py -m backend.app.server 8787     # 后端
 npm --prefix frontend run dev     # 前端
 ```
 
+演示用 URL 参数（脚本化截图/现场直接切状态）：
+
+```
+http://127.0.0.1:5173/                  # 默认：预算 800，12 个真实技能
+http://127.0.0.1:5173/?simulate=1       # 打开「模拟 200 个 skill」
+http://127.0.0.1:5173/?budget=200       # 换预算，看降级级别
+```
+
+![demo](docs/screenshot.png)
+
 其他命令：
 
 ```bash

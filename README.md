@@ -158,7 +158,18 @@ py -m backend.app.llm_probe "用一句话说明渐进式技能披露"
 
 ## 提交与身份
 
-提交按「脚手架 → 解析 → 发现 → 注入 → 工具 → 模型 → 对话 → 沙箱 → 接口 → 技能样例 → 评测 →
-前端 → 描述调优 → 文档」拆分，每条都有具体范围；未使用 `update`/`fix`/`wip` 之类信息，也没有
-改写历史。本仓库的 git 身份是本地配置（`YG <yg@users.noreply.github.com>`），推送到你自己的
-仓库前如需显示为你的账号，请先在 GitHub 侧确认邮箱设置。
+提交按「脚手架 → 解析 → 发现 → 注入 → 工具 → 模型 → 路由器 → 对话 → 沙箱 → 接口 → 技能样例 →
+评测 → 前端 → 描述调优 → 文档 → 回归修复」拆分，共 21 条，每条都有具体范围；没有 `update`/`fix`/`wip`
+式信息，也没有 `push --force`、squash、rebase 或改提交时间。
+
+推送到 GitHub：
+
+```bash
+GITHUB_TOKEN=ghp_xxx GITHUB_OWNER=<你的用户名> ./scripts/publish.sh
+```
+
+脚本用 API 建仓库（已存在则跳过）并以快进方式推送 `main`，历史原样保留；token 只出现在这一条
+push 命令的 URL 里，不写入 `.git/config`。本仓库的 git 身份是本地配置
+（`YG <yg@users.noreply.github.com>`）：如果希望提交归属你的 GitHub 账号，推送后在 GitHub 上
+确认提交邮箱与你账号的邮箱一致即可（不一致时 GitHub 会显示为未关联作者）。
+

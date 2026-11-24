@@ -1,0 +1,13 @@
+{
+  "name": "skill-agent",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Progressive-disclosure skill system for a chat agent: discovery, prompt injection, routing eval, demo UI",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "backend": "py -m backend.app.server",
+    "frontend": "npm --prefix frontend run dev",
+    "eval": "py -m backend.app.eval_cli",
+    "smoke": "py -m backend.app.smoke"
+  }
+}

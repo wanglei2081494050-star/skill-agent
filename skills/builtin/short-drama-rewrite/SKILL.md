@@ -1,6 +1,6 @@
 ---
 name: short-drama-rewrite
-description: 改短剧：把已有的短剧剧本改一改，让台词更顺，注意节奏和钩子。
+description: 只对已有成稿做台词润色：不新增情节、不改分集结构，逐句替换用词并给出改动理由。用户已贴出完整剧本并要求改台词、别动剧情时使用。
 metadata:
   version: 1.0.0
   tags: [drama, rewrite]

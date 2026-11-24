@@ -1,6 +1,6 @@
 ---
 name: short-drama-script
-description: 写短剧：根据用户提供的素材写短剧剧本，包括台词、分集和钩子，注意节奏。
+description: 从零创作新剧本：输入是梗概或人设，输出是完整分集剧本、分集大纲、人物小传与反转设计。还没有任何成稿、需要构思情节与结构时使用。
 metadata:
   version: 1.0.0
   tags: [drama, script, creation]

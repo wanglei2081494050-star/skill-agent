@@ -1,0 +1,563 @@
+{
+  "generatedAt": "2026-11-24T07:01:05+00:00",
+  "fingerprint": "0a20c02817d2c925",
+  "variants": {
+    "baseline": {
+      "variant": "baseline",
+      "router": "bm25-lite",
+      "threshold": 1.6,
+      "total": 20,
+      "correct": 18,
+      "accuracy": 0.9,
+      "wrong": [
+        "c01",
+        "c02"
+      ],
+      "rows": [
+        {
+          "id": "c01",
+          "category": "create",
+          "text": "我有一个都市复仇的短剧创意，帮我写成 60 秒一集的竖屏分集剧本，先给分集大纲。",
+          "expected": "short-drama-script",
+          "predicted": "short-drama-rewrite",
+          "score": 5.1648,
+          "hit": false,
+          "runnerUp": [
+            "short-drama-script",
+            5.1648
+          ]
+        },
+        {
+          "id": "c02",
+          "category": "create",
+          "text": "写一个竖屏短剧第一集剧本，两个外卖员当主角，要有人物小传和钩子。",
+          "expected": "short-drama-script",
+          "predicted": "short-drama-rewrite",
+          "score": 6.4378,
+          "hit": false,
+          "runnerUp": [
+            "short-drama-script",
+            6.4378
+          ]
+        },
+        {
+          "id": "c04",
+          "category": "rewrite",
+          "text": "这段短剧台词太书面了，帮我改得口语一点，剧情一点都别动。",
+          "expected": "short-drama-rewrite",
+          "predicted": "short-drama-rewrite",
+          "score": 3.2189,
+          "hit": true,
+          "runnerUp": [
+            "short-drama-script",
+            3.2189
+          ]
+        },
+        {
+          "id": "c05",
+          "category": "rewrite",
+          "text": "把我贴出的第二集剧本逐句润色，只换台词用词，不要新增情节。",
+          "expected": "short-drama-rewrite",
+          "predicted": "short-drama-rewrite",
+          "score": 3.2189,
+          "hit": true,
+          "runnerUp": [
+            "short-drama-script",
+            3.2189
+          ]
+        },
+        {
+          "id": "c06",
+          "category": "rewrite",
+          "text": "这是个已成稿的短剧剧本，帮我改台词并逐条说明改动理由。",
+          "expected": "short-drama-rewrite",
+          "predicted": "short-drama-rewrite",
+          "score": 8.3837,
+          "hit": true,
+          "runnerUp": [
+            "short-drama-script",
+            6.4378
+          ]
+        },
+        {
+          "id": "c07",
+          "category": "rewrite",
+          "text": "短剧剧本的台词读起来不顺，别改剧情，只把台词写得更抓人。",
+          "expected": "short-drama-rewrite",
+          "predicted": "short-drama-rewrite",
+          "score": 6.4378,
+          "hit": true,
+          "runnerUp": [
+            "short-drama-script",
+            6.4378
+          ]
+        },
+        {
+          "id": "c08",
+          "category": "release",
+          "text": "根据 v1.3.0 到 HEAD 的提交记录生成这次的发布说明。",
+          "expected": "release-notes",
+          "predicted": "release-notes",
+          "score": 14.6712,
+          "hit": true,
+          "runnerUp": [
+            "weekly-report",
+            4.9416
+          ]
+        },
+        {
+          "id": "c09",
+          "category": "release",
+          "text": "从 git log 写一份中文版本更新说明，要有升级注意事项。",
+          "expected": "release-notes",
+          "predicted": "release-notes",
+          "score": 7.4472,
+          "hit": true,
+          "runnerUp": [
+            "data-pipeline",
+            1.6094
+          ]
+        },
+        {
+          "id": "c10",
+          "category": "sql",
+          "text": "这条 SQL 的 EXPLAIN 显示全表扫描，应该加什么索引？",
+          "expected": "sql-explain",
+          "predicted": "sql-explain",
+          "score": 11.6755,
+          "hit": true,
+          "runnerUp": [
+            "commit-message",
+            0.0
+          ]
+        },
+        {
+          "id": "c11",
+          "category": "sql",
+          "text": "PostgreSQL 执行计划里 rows 估算和实际差 50 倍，帮我看看问题在哪。",
+          "expected": "sql-explain",
+          "predicted": "sql-explain",
+          "score": 3.8918,
+          "hit": true,
+          "runnerUp": [
+            "weekly-report",
+            1.9459
+          ]
+        },
+        {
+          "id": "c12",
+          "category": "commit",
+          "text": "把暂存区的 diff 写成一条规范的英文提交信息。",
+          "expected": "commit-message",
+          "predicted": "commit-message",
+          "score": 7.224,
+          "hit": true,
+          "runnerUp": [
+            "release-notes",
+            3.3322
+          ]
+        },
+        {
+          "id": "c14",
+          "category": "test",
+          "text": "给 parse_frontmatter 补单元测试，覆盖边界值和异常分支。",
+          "expected": "unit-test-gen",
+          "predicted": "unit-test-gen",
+          "score": 17.5132,
+          "hit": true,
+          "runnerUp": [
+            "commit-message",
+            0.0
+          ]
+        },
+        {
+          "id": "c15",
+          "category": "test",
+          "text": "这个函数要写测试用例，重点覆盖幂等和并发场景。",
+          "expected": "unit-test-gen",
+          "predicted": "unit-test-gen",
+          "score": 13.2849,
+          "hit": true,
+          "runnerUp": [
+            "data-pipeline",
+            3.5553
+          ]
+        },
+        {
+          "id": "c16",
+          "category": "data",
+          "text": "这个 CSV 编码是乱的还有重复行，帮我清洗一下并给出变更报告。",
+          "expected": "csv-cleanup",
+          "predicted": "csv-cleanup",
+          "score": 12.612,
+          "hit": true,
+          "runnerUp": [
+            "commit-message",
+            3.2189
+          ]
+        },
+        {
+          "id": "c17",
+          "category": "data",
+          "text": "把本周数据落库的 ETL 管道检查一遍，要求能重跑并且行数对账。",
+          "expected": "data-pipeline",
+          "predicted": "data-pipeline",
+          "score": 15.0077,
+          "hit": true,
+          "runnerUp": [
+            "commit-message",
+            1.9459
+          ]
+        },
+        {
+          "id": "c18",
+          "category": "report",
+          "text": "写一份周报，包含本周进展、风险和下周计划。",
+          "expected": "weekly-report",
+          "predicted": "weekly-report",
+          "score": 11.339,
+          "hit": true,
+          "runnerUp": [
+            "data-pipeline",
+            1.9459
+          ]
+        },
+        {
+          "id": "c19",
+          "category": "notes",
+          "text": "把这段会议转写整理成决议和待办清单。",
+          "expected": "meeting-notes",
+          "predicted": "meeting-notes",
+          "score": 17.1767,
+          "hit": true,
+          "runnerUp": [
+            "release-notes",
+            1.6094
+          ]
+        },
+        {
+          "id": "c20",
+          "category": "none",
+          "text": "今天天气怎么样？",
+          "expected": null,
+          "predicted": null,
+          "score": 0.0,
+          "hit": true,
+          "runnerUp": [
+            "csv-cleanup",
+            0.0
+          ]
+        },
+        {
+          "id": "c21",
+          "category": "none",
+          "text": "你好，你能做什么？",
+          "expected": null,
+          "predicted": null,
+          "score": 0.0,
+          "hit": true,
+          "runnerUp": [
+            "csv-cleanup",
+            0.0
+          ]
+        },
+        {
+          "id": "c22",
+          "category": "none",
+          "text": "推荐几部周末能看的电影。",
+          "expected": null,
+          "predicted": null,
+          "score": 0.0,
+          "hit": true,
+          "runnerUp": [
+            "csv-cleanup",
+            0.0
+          ]
+        }
+      ],
+      "generatedAt": "2026-11-24T07:01:05+00:00"
+    },
+    "tuned": {
+      "variant": "tuned",
+      "router": "bm25-lite",
+      "threshold": 1.6,
+      "total": 20,
+      "correct": 20,
+      "accuracy": 1.0,
+      "wrong": [],
+      "rows": [
+        {
+          "id": "c01",
+          "category": "create",
+          "text": "我有一个都市复仇的短剧创意，帮我写成 60 秒一集的竖屏分集剧本，先给分集大纲。",
+          "expected": "short-drama-script",
+          "predicted": "short-drama-script",
+          "score": 9.0566,
+          "hit": true,
+          "runnerUp": [
+            "short-drama-rewrite",
+            3.2189
+          ]
+        },
+        {
+          "id": "c02",
+          "category": "create",
+          "text": "写一个竖屏短剧第一集剧本，两个外卖员当主角，要有人物小传和钩子。",
+          "expected": "short-drama-script",
+          "predicted": "short-drama-script",
+          "score": 9.3931,
+          "hit": true,
+          "runnerUp": [
+            "short-drama-rewrite",
+            1.6094
+          ]
+        },
+        {
+          "id": "c04",
+          "category": "rewrite",
+          "text": "这段短剧台词太书面了，帮我改得口语一点，剧情一点都别动。",
+          "expected": "short-drama-rewrite",
+          "predicted": "short-drama-rewrite",
+          "score": 5.8377,
+          "hit": true,
+          "runnerUp": [
+            "commit-message",
+            0.0
+          ]
+        },
+        {
+          "id": "c05",
+          "category": "rewrite",
+          "text": "把我贴出的第二集剧本逐句润色，只换台词用词，不要新增情节。",
+          "expected": "short-drama-rewrite",
+          "predicted": "short-drama-rewrite",
+          "score": 16.8402,
+          "hit": true,
+          "runnerUp": [
+            "short-drama-script",
+            5.1648
+          ]
+        },
+        {
+          "id": "c06",
+          "category": "rewrite",
+          "text": "这是个已成稿的短剧剧本，帮我改台词并逐条说明改动理由。",
+          "expected": "short-drama-rewrite",
+          "predicted": "short-drama-rewrite",
+          "score": 14.8943,
+          "hit": true,
+          "runnerUp": [
+            "short-drama-script",
+            3.2189
+          ]
+        },
+        {
+          "id": "c07",
+          "category": "rewrite",
+          "text": "短剧剧本的台词读起来不顺，别改剧情，只把台词写得更抓人。",
+          "expected": "short-drama-rewrite",
+          "predicted": "short-drama-rewrite",
+          "score": 5.5013,
+          "hit": true,
+          "runnerUp": [
+            "short-drama-script",
+            1.6094
+          ]
+        },
+        {
+          "id": "c08",
+          "category": "release",
+          "text": "根据 v1.3.0 到 HEAD 的提交记录生成这次的发布说明。",
+          "expected": "release-notes",
+          "predicted": "release-notes",
+          "score": 14.6712,
+          "hit": true,
+          "runnerUp": [
+            "weekly-report",
+            4.9416
+          ]
+        },
+        {
+          "id": "c09",
+          "category": "release",
+          "text": "从 git log 写一份中文版本更新说明，要有升级注意事项。",
+          "expected": "release-notes",
+          "predicted": "release-notes",
+          "score": 7.4472,
+          "hit": true,
+          "runnerUp": [
+            "data-pipeline",
+            1.6094
+          ]
+        },
+        {
+          "id": "c10",
+          "category": "sql",
+          "text": "这条 SQL 的 EXPLAIN 显示全表扫描，应该加什么索引？",
+          "expected": "sql-explain",
+          "predicted": "sql-explain",
+          "score": 11.6755,
+          "hit": true,
+          "runnerUp": [
+            "commit-message",
+            0.0
+          ]
+        },
+        {
+          "id": "c11",
+          "category": "sql",
+          "text": "PostgreSQL 执行计划里 rows 估算和实际差 50 倍，帮我看看问题在哪。",
+          "expected": "sql-explain",
+          "predicted": "sql-explain",
+          "score": 3.8918,
+          "hit": true,
+          "runnerUp": [
+            "weekly-report",
+            1.9459
+          ]
+        },
+        {
+          "id": "c12",
+          "category": "commit",
+          "text": "把暂存区的 diff 写成一条规范的英文提交信息。",
+          "expected": "commit-message",
+          "predicted": "commit-message",
+          "score": 7.224,
+          "hit": true,
+          "runnerUp": [
+            "release-notes",
+            3.3322
+          ]
+        },
+        {
+          "id": "c14",
+          "category": "test",
+          "text": "给 parse_frontmatter 补单元测试，覆盖边界值和异常分支。",
+          "expected": "unit-test-gen",
+          "predicted": "unit-test-gen",
+          "score": 17.5132,
+          "hit": true,
+          "runnerUp": [
+            "commit-message",
+            0.0
+          ]
+        },
+        {
+          "id": "c15",
+          "category": "test",
+          "text": "这个函数要写测试用例，重点覆盖幂等和并发场景。",
+          "expected": "unit-test-gen",
+          "predicted": "unit-test-gen",
+          "score": 13.2849,
+          "hit": true,
+          "runnerUp": [
+            "data-pipeline",
+            3.5553
+          ]
+        },
+        {
+          "id": "c16",
+          "category": "data",
+          "text": "这个 CSV 编码是乱的还有重复行，帮我清洗一下并给出变更报告。",
+          "expected": "csv-cleanup",
+          "predicted": "csv-cleanup",
+          "score": 12.612,
+          "hit": true,
+          "runnerUp": [
+            "data-pipeline",
+            3.2189
+          ]
+        },
+        {
+          "id": "c17",
+          "category": "data",
+          "text": "把本周数据落库的 ETL 管道检查一遍，要求能重跑并且行数对账。",
+          "expected": "data-pipeline",
+          "predicted": "data-pipeline",
+          "score": 15.0077,
+          "hit": true,
+          "runnerUp": [
+            "commit-message",
+            1.6094
+          ]
+        },
+        {
+          "id": "c18",
+          "category": "report",
+          "text": "写一份周报，包含本周进展、风险和下周计划。",
+          "expected": "weekly-report",
+          "predicted": "weekly-report",
+          "score": 11.339,
+          "hit": true,
+          "runnerUp": [
+            "data-pipeline",
+            1.9459
+          ]
+        },
+        {
+          "id": "c19",
+          "category": "notes",
+          "text": "把这段会议转写整理成决议和待办清单。",
+          "expected": "meeting-notes",
+          "predicted": "meeting-notes",
+          "score": 17.1767,
+          "hit": true,
+          "runnerUp": [
+            "release-notes",
+            1.6094
+          ]
+        },
+        {
+          "id": "c20",
+          "category": "none",
+          "text": "今天天气怎么样？",
+          "expected": null,
+          "predicted": null,
+          "score": 0.0,
+          "hit": true,
+          "runnerUp": [
+            "csv-cleanup",
+            0.0
+          ]
+        },
+        {
+          "id": "c21",
+          "category": "none",
+          "text": "你好，你能做什么？",
+          "expected": null,
+          "predicted": null,
+          "score": 0.0,
+          "hit": true,
+          "runnerUp": [
+            "csv-cleanup",
+            0.0
+          ]
+        },
+        {
+          "id": "c22",
+          "category": "none",
+          "text": "推荐几部周末能看的电影。",
+          "expected": null,
+          "predicted": null,
+          "score": 0.0,
+          "hit": true,
+          "runnerUp": [
+            "csv-cleanup",
+            0.0
+          ]
+        }
+      ],
+      "generatedAt": "2026-11-24T07:01:05+00:00"
+    }
+  },
+  "delta": {
+    "before": 0.9,
+    "after": 1.0,
+    "absoluteGain": 0.1,
+    "fixedCases": [
+      "c01",
+      "c02"
+    ],
+    "regressedCases": []
+  }
+}

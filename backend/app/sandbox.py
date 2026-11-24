@@ -81,7 +81,9 @@ def run_script(snapshot_skills: dict[str, Skill], name: str, rel_path: str, args
         started = Path(tmp)
         try:
             proc = subprocess.run(
-                [sys.executable, "-I", "-c", "import sitecustomize, runpy, sys; "
+                # No -I here: isolated mode ignores PYTHONPATH, which would also
+                # skip our injected sitecustomize and silently re-enable network.
+                [sys.executable, "-c", "import sitecustomize, runpy, sys; "
                  f"sys.argv = [{str(target)!r}] + {args!r}; "
                  f"runpy.run_path({str(target)!r}, run_name='__main__')"],
                 cwd=str(work),

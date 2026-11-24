@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "note": "Two description variants for the confusable pair, so the before/after routing comparison stays reproducible after the SKILL.md files are updated to the tuned wording.",
+  "variants": {
+    "baseline": {
+      "short-drama-script": "写短剧：根据用户提供的素材写短剧剧本，包括台词、分集和钩子，注意节奏。",
+      "short-drama-rewrite": "改短剧：把已有的短剧剧本改一改，让台词更顺，注意节奏和钩子。"
+    },
+    "tuned": {
+      "short-drama-script": "从零创作新剧本：输入是梗概或人设，输出是完整分集剧本、分集大纲、人物小传与反转设计。还没有任何成稿、需要构思情节与结构时使用。",
+      "short-drama-rewrite": "只对已有成稿做台词润色：不新增情节、不改分集结构，逐句替换用词并给出改动理由。用户已贴出完整剧本并要求改台词、别动剧情时使用。"
+    }
+  }
+}

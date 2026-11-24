@@ -67,7 +67,7 @@ inject.build_skill_section  tools.load_skill / read_skill_file   router.route
 
 ## 评测设计
 
-评测集 20 条：12 条明确对应某个技能，5 条是易混/口语化表达，3 条应当不使用任何技能（负例）。
+评测集 20 条：17 条对应某个具体技能（含口语化与易混表达），3 条为负例，应当不使用任何技能。
 每条标注 `expected`（或 `null`）与 `category`。
 
 两个描述版本保存在 `eval/description_variants.json`，评测时作为 `descriptions` 覆盖传入

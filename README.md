@@ -38,7 +38,7 @@ http://127.0.0.1:5173/?budget=200       # 换预算，看降级级别
 其他命令：
 
 ```bash
-make test        # py -m unittest discover -s tests -t .   （32 个用例）
+make test        # py -m unittest discover -s tests -t .   （39 个用例）
 make smoke       # 端到端自检，不需要 UI
 make eval        # 路由评测，写 data/eval/latest.json
 make build       # 前端类型检查 + 产物构建

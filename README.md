@@ -162,14 +162,21 @@ py -m backend.app.llm_probe "用一句话说明渐进式技能披露"
 评测 → 前端 → 描述调优 → 文档 → 回归修复」拆分，共 20 余条，每条都有具体范围；没有 `update`/`fix`/`wip`
 式信息，也没有 `push --force`、squash、rebase 或改提交时间。
 
-推送到 GitHub：
+推送到 GitHub（`scripts/publish_github.py`）：
 
 ```bash
-GITHUB_TOKEN=ghp_xxx GITHUB_OWNER=<你的用户名> ./scripts/publish.sh
+py scripts/publish_github.py                       # 复用 Edge 已登录会话：自动填设备码 + 点授权
+py scripts/publish_github.py --private             # 建成私有仓库
+GITHUB_TOKEN=ghp_xxx py scripts/publish_github.py  # 已有 token 时跳过浏览器
+py scripts/publish_github.py --dry-run             # 只授权 + 建仓，不推送
 ```
 
-脚本用 API 建仓库（已存在则跳过）并以快进方式推送 `main`，历史原样保留；token 只出现在这一条
-push 命令的 URL 里，不写入 `.git/config`。本仓库的 git 身份是本地配置
-（`YG <yg@users.noreply.github.com>`）：如果希望提交归属你的 GitHub 账号，推送后在 GitHub 上
-确认提交邮箱与你账号的邮箱一致即可（不一致时 GitHub 会显示为未关联作者）。
+脚本三步走：① 取 token——`--token`/`GITHUB_TOKEN` 优先，否则走 GitHub 设备流，用 Windows UI
+Automation 在已登录的 Edge 里自动填设备码并点「授权」（不需要密码，也不需要导出 cookie）；
+② 用 REST API 建仓库（已存在则跳过）；③ 推送 `main` 并回查默认分支、提交数、文件数做校验。
+token 只出现在那一条 `git push` 的 URL 里，不写入 `.git/config`。
+
+当前仓库：<https://github.com/wanglei2081494050-star/skill-agent>（public）。本仓库的 git 身份是
+本地配置（`YG <yg@users.noreply.github.com>`）：如果希望提交归属你的 GitHub 账号，确认该邮箱与
+账号邮箱一致即可（不一致时 GitHub 会显示为未关联作者）。
 

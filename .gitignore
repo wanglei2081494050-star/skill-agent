@@ -7,3 +7,5 @@ data/*.jsonl
 data/*.log
 .dev/
 .DS_Store
+
+@AutomationLog.txt

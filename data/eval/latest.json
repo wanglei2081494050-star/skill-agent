@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T07:01:05+00:00",
+  "generatedAt": "2026-11-24T07:02:01+00:00",
   "fingerprint": "0a20c02817d2c925",
   "variants": {
     "baseline": {
@@ -41,7 +41,7 @@
           ]
         },
         {
-          "id": "c04",
+          "id": "c03",
           "category": "rewrite",
           "text": "这段短剧台词太书面了，帮我改得口语一点，剧情一点都别动。",
           "expected": "short-drama-rewrite",
@@ -54,7 +54,7 @@
           ]
         },
         {
-          "id": "c05",
+          "id": "c04",
           "category": "rewrite",
           "text": "把我贴出的第二集剧本逐句润色，只换台词用词，不要新增情节。",
           "expected": "short-drama-rewrite",
@@ -67,7 +67,7 @@
           ]
         },
         {
-          "id": "c06",
+          "id": "c05",
           "category": "rewrite",
           "text": "这是个已成稿的短剧剧本，帮我改台词并逐条说明改动理由。",
           "expected": "short-drama-rewrite",
@@ -80,7 +80,7 @@
           ]
         },
         {
-          "id": "c07",
+          "id": "c06",
           "category": "rewrite",
           "text": "短剧剧本的台词读起来不顺，别改剧情，只把台词写得更抓人。",
           "expected": "short-drama-rewrite",
@@ -93,7 +93,7 @@
           ]
         },
         {
-          "id": "c08",
+          "id": "c07",
           "category": "release",
           "text": "根据 v1.3.0 到 HEAD 的提交记录生成这次的发布说明。",
           "expected": "release-notes",
@@ -106,7 +106,7 @@
           ]
         },
         {
-          "id": "c09",
+          "id": "c08",
           "category": "release",
           "text": "从 git log 写一份中文版本更新说明，要有升级注意事项。",
           "expected": "release-notes",
@@ -119,7 +119,7 @@
           ]
         },
         {
-          "id": "c10",
+          "id": "c09",
           "category": "sql",
           "text": "这条 SQL 的 EXPLAIN 显示全表扫描，应该加什么索引？",
           "expected": "sql-explain",
@@ -132,7 +132,7 @@
           ]
         },
         {
-          "id": "c11",
+          "id": "c10",
           "category": "sql",
           "text": "PostgreSQL 执行计划里 rows 估算和实际差 50 倍，帮我看看问题在哪。",
           "expected": "sql-explain",
@@ -145,7 +145,7 @@
           ]
         },
         {
-          "id": "c12",
+          "id": "c11",
           "category": "commit",
           "text": "把暂存区的 diff 写成一条规范的英文提交信息。",
           "expected": "commit-message",
@@ -158,7 +158,7 @@
           ]
         },
         {
-          "id": "c14",
+          "id": "c12",
           "category": "test",
           "text": "给 parse_frontmatter 补单元测试，覆盖边界值和异常分支。",
           "expected": "unit-test-gen",
@@ -171,7 +171,7 @@
           ]
         },
         {
-          "id": "c15",
+          "id": "c13",
           "category": "test",
           "text": "这个函数要写测试用例，重点覆盖幂等和并发场景。",
           "expected": "unit-test-gen",
@@ -184,7 +184,7 @@
           ]
         },
         {
-          "id": "c16",
+          "id": "c14",
           "category": "data",
           "text": "这个 CSV 编码是乱的还有重复行，帮我清洗一下并给出变更报告。",
           "expected": "csv-cleanup",
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "id": "c17",
+          "id": "c15",
           "category": "data",
           "text": "把本周数据落库的 ETL 管道检查一遍，要求能重跑并且行数对账。",
           "expected": "data-pipeline",
@@ -210,7 +210,7 @@
           ]
         },
         {
-          "id": "c18",
+          "id": "c16",
           "category": "report",
           "text": "写一份周报，包含本周进展、风险和下周计划。",
           "expected": "weekly-report",
@@ -223,7 +223,7 @@
           ]
         },
         {
-          "id": "c19",
+          "id": "c17",
           "category": "notes",
           "text": "把这段会议转写整理成决议和待办清单。",
           "expected": "meeting-notes",
@@ -236,7 +236,7 @@
           ]
         },
         {
-          "id": "c20",
+          "id": "c18",
           "category": "none",
           "text": "今天天气怎么样？",
           "expected": null,
@@ -249,7 +249,7 @@
           ]
         },
         {
-          "id": "c21",
+          "id": "c19",
           "category": "none",
           "text": "你好，你能做什么？",
           "expected": null,
@@ -262,7 +262,7 @@
           ]
         },
         {
-          "id": "c22",
+          "id": "c20",
           "category": "none",
           "text": "推荐几部周末能看的电影。",
           "expected": null,
@@ -275,7 +275,7 @@
           ]
         }
       ],
-      "generatedAt": "2026-11-24T07:01:05+00:00"
+      "generatedAt": "2026-11-24T07:02:01+00:00"
     },
     "tuned": {
       "variant": "tuned",
@@ -313,7 +313,7 @@
           ]
         },
         {
-          "id": "c04",
+          "id": "c03",
           "category": "rewrite",
           "text": "这段短剧台词太书面了，帮我改得口语一点，剧情一点都别动。",
           "expected": "short-drama-rewrite",
@@ -326,7 +326,7 @@
           ]
         },
         {
-          "id": "c05",
+          "id": "c04",
           "category": "rewrite",
           "text": "把我贴出的第二集剧本逐句润色，只换台词用词，不要新增情节。",
           "expected": "short-drama-rewrite",
@@ -339,7 +339,7 @@
           ]
         },
         {
-          "id": "c06",
+          "id": "c05",
           "category": "rewrite",
           "text": "这是个已成稿的短剧剧本，帮我改台词并逐条说明改动理由。",
           "expected": "short-drama-rewrite",
@@ -352,7 +352,7 @@
           ]
         },
         {
-          "id": "c07",
+          "id": "c06",
           "category": "rewrite",
           "text": "短剧剧本的台词读起来不顺，别改剧情，只把台词写得更抓人。",
           "expected": "short-drama-rewrite",
@@ -365,7 +365,7 @@
           ]
         },
         {
-          "id": "c08",
+          "id": "c07",
           "category": "release",
           "text": "根据 v1.3.0 到 HEAD 的提交记录生成这次的发布说明。",
           "expected": "release-notes",
@@ -378,7 +378,7 @@
           ]
         },
         {
-          "id": "c09",
+          "id": "c08",
           "category": "release",
           "text": "从 git log 写一份中文版本更新说明，要有升级注意事项。",
           "expected": "release-notes",
@@ -391,7 +391,7 @@
           ]
         },
         {
-          "id": "c10",
+          "id": "c09",
           "category": "sql",
           "text": "这条 SQL 的 EXPLAIN 显示全表扫描，应该加什么索引？",
           "expected": "sql-explain",
@@ -404,7 +404,7 @@
           ]
         },
         {
-          "id": "c11",
+          "id": "c10",
           "category": "sql",
           "text": "PostgreSQL 执行计划里 rows 估算和实际差 50 倍，帮我看看问题在哪。",
           "expected": "sql-explain",
@@ -417,7 +417,7 @@
           ]
         },
         {
-          "id": "c12",
+          "id": "c11",
           "category": "commit",
           "text": "把暂存区的 diff 写成一条规范的英文提交信息。",
           "expected": "commit-message",
@@ -430,7 +430,7 @@
           ]
         },
         {
-          "id": "c14",
+          "id": "c12",
           "category": "test",
           "text": "给 parse_frontmatter 补单元测试，覆盖边界值和异常分支。",
           "expected": "unit-test-gen",
@@ -443,7 +443,7 @@
           ]
         },
         {
-          "id": "c15",
+          "id": "c13",
           "category": "test",
           "text": "这个函数要写测试用例，重点覆盖幂等和并发场景。",
           "expected": "unit-test-gen",
@@ -456,7 +456,7 @@
           ]
         },
         {
-          "id": "c16",
+          "id": "c14",
           "category": "data",
           "text": "这个 CSV 编码是乱的还有重复行，帮我清洗一下并给出变更报告。",
           "expected": "csv-cleanup",
@@ -469,7 +469,7 @@
           ]
         },
         {
-          "id": "c17",
+          "id": "c15",
           "category": "data",
           "text": "把本周数据落库的 ETL 管道检查一遍，要求能重跑并且行数对账。",
           "expected": "data-pipeline",
@@ -482,7 +482,7 @@
           ]
         },
         {
-          "id": "c18",
+          "id": "c16",
           "category": "report",
           "text": "写一份周报，包含本周进展、风险和下周计划。",
           "expected": "weekly-report",
@@ -495,7 +495,7 @@
           ]
         },
         {
-          "id": "c19",
+          "id": "c17",
           "category": "notes",
           "text": "把这段会议转写整理成决议和待办清单。",
           "expected": "meeting-notes",
@@ -508,7 +508,7 @@
           ]
         },
         {
-          "id": "c20",
+          "id": "c18",
           "category": "none",
           "text": "今天天气怎么样？",
           "expected": null,
@@ -521,7 +521,7 @@
           ]
         },
         {
-          "id": "c21",
+          "id": "c19",
           "category": "none",
           "text": "你好，你能做什么？",
           "expected": null,
@@ -534,7 +534,7 @@
           ]
         },
         {
-          "id": "c22",
+          "id": "c20",
           "category": "none",
           "text": "推荐几部周末能看的电影。",
           "expected": null,
@@ -547,7 +547,7 @@
           ]
         }
       ],
-      "generatedAt": "2026-11-24T07:01:05+00:00"
+      "generatedAt": "2026-11-24T07:02:01+00:00"
     }
   },
   "delta": {

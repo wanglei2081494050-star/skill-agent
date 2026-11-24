@@ -251,6 +251,8 @@ function render(): void {
     ${renderLlm(state)}
   </section>`;
   bind();
+  const turnsBox = document.querySelector<HTMLDivElement>("#turns");
+  if (turnsBox) turnsBox.scrollTop = turnsBox.scrollHeight;
 }
 
 async function refresh(): Promise<void> {
@@ -337,6 +339,10 @@ function bind(): void {
 }
 
 async function boot(): Promise<void> {
+  const params = new URLSearchParams(window.location.search);
+  const budgetParam = Number(params.get("budget"));
+  if (Number.isFinite(budgetParam) && budgetParam > 0) ui.budget = budgetParam;
+  ui.simulate = ["1", "true", "on"].includes((params.get("simulate") ?? "").toLowerCase());
   await refresh();
   try {
     ui.evalReport = await api.evalReport();
